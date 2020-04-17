@@ -21,8 +21,8 @@ h2 {
   color: #000;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 65%;
-  margin: 10px 70px 0 30px;
 }
 
 /* Partie de gauche */
@@ -30,6 +30,7 @@ h2 {
 /* Photo */
 #photo {
   text-align: center;
+  text-decoration: none;
 }
 
 #photo-mini {
@@ -69,7 +70,7 @@ h2 {
 }
 
 #loisirs {
-  margin: 300px 0 50px 0;
+  margin: 550px 0 50px 0;
 }
 
 #contact a:first-child {
@@ -108,6 +109,11 @@ h2 {
 
 /* Partie de droite */
 
+/* Conteneur */
+#conteneur {
+  margin-left: 80px;
+}
+
 /* Nom */
 span {
   color: #0b9499;
@@ -115,12 +121,12 @@ span {
 
 #id h1 {
   font-size: 4em;
-  margin: 100px 0 0 0;
+  margin: 100px 0 0;
 }
 
 #id p {
   font-size: 2em;
-  margin: 0 0 100px 0;
+  margin: 0 0 100px;
 }
 
 #sous_titre {
@@ -133,29 +139,16 @@ span {
 /* Autres */
 #formation h2,
 #experience h2,
-#recommandations h2 {
-  font-size: 2.2em;
+#recommandations h2,
+#loisirs-responsive h2 {
+  font-size: 2.5em;
   padding-bottom: 15px;
   border-bottom: 2px solid #0b9499;
-  margin-right: 60px;
 }
 
-#formation,
-#experience {
-  margin-bottom: 50px;
-}
-
-#formation img,
-#experience img,
-#recommandations img {
-  width: 35px;
-  height: 40px;
-  margin-right: 15px;
-  margin-bottom: -10px;
-}
-
-#recommandations {
-  margin-bottom: 90px;
+.flex-2 a {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 #reco {
@@ -168,12 +161,24 @@ span {
   color: #0b9499;
 }
 
-li {
-  list-style-type: none;
+.rond-puce {
+  border: 1px solid #0b9499;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  background: #0b9499;
 }
 
-.flex-2 a {
-  font-weight: bold;
+#loisirs-responsive {
+  display: none;
+}
+
+.icone-principal {
+  margin: 18px 20px 0 0;
+}
+
+.icone-secondaire {
+  margin: 22px 20px 0 0;
 }
 
 /* Flexbox */
@@ -186,29 +191,51 @@ li {
   flex: 1;
 }
 
-.flex-1 i {
-  margin-right: 9px;
-  margin-left: -40px;
-}
-
-li:nth-child(4) i {
-  margin-right: 50px;
-  margin-left: -40px;
-}
-
 .flex-2 {
   flex: 2;
 }
 
 /* media queries */
-@media screen and (max-width: 1200px) {
+
+@media screen and (max-width: 1024px) {
   #bloc-page {
-    display: flex;
     flex-direction: column;
-    width: auto;
+    width: 100%;
+  }
+
+  #lisere {
+    width: 100%;
+  }
+
+  #loisirs {
+    display: none;
   }
 
   #id {
+    display: none;
+  }
+
+  #reco {
+    flex-direction: column;
+  }
+
+  #photo::before {
+    content: "DAVID TAVARES";
+    color: #000;
+    font-family: "Alice", serif;
+    text-align: center;
+    color: #0b9499;
+    font-size: 2.5em;
+    background-color: #656363;
     display: flex;
+    flex-direction: column;
+  }
+
+  #conteneur {
+    margin-left: 0;
+  }
+
+  #loisirs-responsive {
+    display: initial;
   }
 }
