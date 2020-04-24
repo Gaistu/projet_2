@@ -18,9 +18,9 @@
     <main id="bloc-page">
       <!-- Liseré -->
       <section id="lisere">
-        <a id="photo" href="images/photo.png" target="_blank"
-          ><img id="photo-mini" src="images/photo.png" alt="Photo" />
-        </a>
+        <div id="autour-photo">
+          <img id="photo" src="images/photo.png" alt="Photo" />
+        </div>
 
         <!-- Contact -->
         <article id="contact">
@@ -32,8 +32,10 @@
               target="_blank"
               ><i class="fa fa-map-marker" aria-hidden="true"></i></a
             ><br />
-            France Téléphone<br /><br />
-            06 86 70 00 10 Email<br />
+            France<br /><br />
+            Téléphone<br />
+            06 86 70 00 10<br /><br />
+            Email<br />
             <a class="mail" href="mailto:gaistu@gmail.com" target="_blank"
               >gaistu@gmail.com</a
             ><br /><br />
@@ -45,7 +47,7 @@
         </article>
 
         <!-- A propos de moi -->
-        <article id="about_me">
+        <article id="about-me">
           <h2 class="lisere-titre">à propos de moi</h2>
           <p>
             De tempérament optimiste et curieux, je me suis régulièrement
@@ -84,13 +86,13 @@
       <section id="conteneur">
         <!-- Nom -->
         <section id="id">
-          <h1><span>DAVID</span> TAVARES</h1>
-          <p><mark id="sous_titre">Dévelo</mark>ppeur web</p>
+            <h1 id="nom"><span>DAVID</span> TAVARES</h1>
+            <h2 id="profession"><mark id="sous_titre">Dévelo</mark>ppeur web</h2>
         </section>
 
         <!-- Formation -->
         <section id="formation">
-          <h2>
+          <h2 class="titre-droite">
             <i
               class="fa fa-graduation-cap fa-fw"
               aria-hidden="true"
@@ -99,12 +101,11 @@
             >formation
           </h2>
           <article class="informations">
-            <div class="icone-principal">
-              <i
-                class="fa fa-dot-circle-o fa-fw fa-lg"
-                aria-hidden="true"
-                style="color: #0b9499;"
-              ></i>
+            <div class="icone-principale">
+              <div class="rond">
+                <div class="rond-interne"></div>
+              </div>
+            </div>
             </div>
             <aside class="informations-gauche">
               <p>
@@ -154,7 +155,7 @@
 
         <!-- Expérience -->
         <section id="experience">
-          <h2>
+          <h2 class="titre-droite">
             <i
               class="fa fa-suitcase fa-fw"
               aria-hidden="true"
@@ -164,12 +165,12 @@
           </h2>
 
           <article class="informations">
-            <div class="icone-principal">
-              <i
-                class="fa fa-dot-circle-o fa-fw fa-lg"
-                aria-hidden="true"
-                style="color: #0b9499;"
-              ></i>
+            <div class="icone-principale">
+              <div class="icone-principale">
+                <div class="rond">
+                  <div class="rond-interne"></div>
+                </div>
+              </div>
             </div>
             <aside class="informations-gauche">
               <p>
@@ -254,7 +255,7 @@
 
         <!-- Recommandations -->
         <section id="recommandations">
-          <h2>
+          <h2 class="titre-droite">
             <i
               class="fa fa-pencil fa-fw"
               aria-hidden="true"
@@ -293,9 +294,10 @@
             </aside>
           </article>
         </section>
-        <section>
+
+        <!-- <section>
           <article id="loisirs-responsive">
-            <h2>
+            <h2 class="titre-droite">
               <i
                 class="fa fa-arrow-circle-right fa-fw"
                 aria-hidden="true"
@@ -321,7 +323,7 @@
               ></a>
             </div>
           </article>
-        </section>
+        </section> -->
       </section>
     </main>
   </body>

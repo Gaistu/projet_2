@@ -1,41 +1,47 @@
-/* Global */
+/*--------------- Global ---------------*/
+
 * {
   font-family: "Alice", serif;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 1800px;
 }
 
 #bloc-page {
   display: flex;
-  flex-direction: row;
-  margin: auto;
-  width: 75%;
+  width: 70%;
 }
 
-h2 {
-  text-transform: uppercase;
-}
+/*--------------- Liseré ---------------*/
 
-/* lisere */
 #lisere {
-  background-color: #0b9499;
-  color: #000;
+  width: 33%;
   display: flex;
   flex-direction: column;
+  background-color: #0b9499;
+}
+
+/*--------------- Partie de gauche ---------------*/
+
+/*--------------- Photo ---------------*/
+
+#autour-photo {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  width: 65%;
+  flex: 4;
 }
 
-/* Partie de gauche */
-
-/* Photo */
 #photo {
-  text-align: center;
-  text-decoration: none;
+  width: 220px;
+  height: 220px;
 }
 
-#photo-mini {
-  width: 380px;
-  height: 300px;
-}
+/*--------------- Informations ---------------*/
 
 .lisere-titre {
   text-align: center;
@@ -43,32 +49,19 @@ h2 {
   font-size: 2.2em;
   background-color: #656363;
   padding: 8px 0;
+  text-transform: uppercase;
 }
 
-#contact p,
-#about_me p {
-  margin-left: 40px;
-  margin-right: 40px;
-}
+/*--------------- Contact ---------------*/
 
-#contact,
-#about_me {
-  margin-bottom: 100px;
-}
-
-#contact,
-#about-me,
-#loisirs {
+#contact {
   display: flex;
   flex-direction: column;
-  align-content: center;
-}
-#about_me p {
-  text-align: justify;
+  flex: 5;
 }
 
-#loisirs {
-  margin: 550px 0 50px 0;
+#contact p {
+  padding: 40px 40px 0;
 }
 
 #contact a:first-child {
@@ -85,6 +78,27 @@ h2 {
   color: #bc0909;
 }
 
+/*--------------- A propos de moi ---------------*/
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  flex: 7;
+}
+
+#about-me p {
+  text-align: justify;
+  padding: 40px 40px 0;
+}
+
+/*--------------- Loisirs ---------------*/
+
+#loisirs {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
 .icone {
   display: flex;
   justify-content: center;
@@ -94,95 +108,109 @@ h2 {
   border: 2px solid black;
   border-radius: 50%;
   padding: 15px;
-  margin: 0 5px;
 }
 
 .icone a {
   color: #000;
+  padding: 10px;
 }
 
 .icone a:hover {
   color: #bc0909;
 }
 
-/* Partie de droite */
+/*--------------- Partie de droite ---------------*/
 
-/* Conteneur */
+/*--------------- Conteneur ---------------*/
+
 #conteneur {
-  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px 0 80px 100px;
+  width: 66%;
 }
 
-/* Nom */
-span {
+/*--------------- Icone principale ---------------*/
+
+.icone-principale {
+  width: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.rond {
+  border: 2px solid #0b9499;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+}
+
+.rond-interne {
+  border: 1px solid #0b9499;
+  border-radius: 50%;
+  height: 4px;
+  width: 4px;
+  background: #0b9499;
+  transform: translate(70%, 70%);
+}
+
+/*--------------- Icone secondaire ---------------*/
+
+.icone-secondaire {
+  width: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.rond-puce {
+  border: 1px solid #0b9499;
+  border-radius: 50%;
+  height: 7px;
+  width: 7px;
+  background: #0b9499;
+}
+
+/*--------------- Nom ---------------*/
+
+#id {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+#nom {
+  font-size: 4em;
+}
+
+#nom span {
   color: #0b9499;
 }
 
-#id h1 {
-  font-size: 4em;
-  margin: 100px 0 0;
-}
-
-#id p {
+#profession {
   font-size: 2em;
-  margin: 0 0 100px;
 }
 
 #sous_titre {
   color: #000;
   border-bottom: 2px solid #0b9499;
   padding-bottom: 1px;
-  background-color: white;
+  background-color: #ffffff;
 }
 
-/* Autres */
-#formation h2,
-#experience h2,
-#recommandations h2,
-#loisirs-responsive h2 {
+/*--------------- Ensemble ---------------*/
+
+.titre-droite {
   font-size: 2.5em;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   border-bottom: 2px solid #0b9499;
+  text-transform: uppercase;
 }
 
-.informations-droite a {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-#reco {
-  display: flex;
-  justify-content: space-around;
-}
-
-.pro {
-  text-decoration: none;
-  color: #0b9499;
-}
-
-.rond-puce {
-  border: 1px solid #0b9499;
-  border-radius: 50%;
-  height: 8px;
-  width: 8px;
-  background: #0b9499;
-}
-
-#loisirs-responsive {
-  display: none;
-}
-
-.icone-principal {
-  margin: 18px 20px 0 0;
-}
-
-.icone-secondaire {
-  margin: 22px 20px 0 0;
-}
-
-/* Flexbox */
 .informations {
   display: flex;
-  margin-bottom: 50px;
+  padding-top: 20px;
 }
 
 .informations-gauche {
@@ -193,47 +221,54 @@ span {
   flex: 2;
 }
 
-/* media queries */
-
-@media screen and (max-width: 1024px) {
-  #bloc-page {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  #lisere {
-    width: 100%;
-  }
-
-  #loisirs {
-    display: none;
-  }
-
-  #id {
-    display: none;
-  }
-
-  #reco {
-    flex-direction: column;
-  }
-
-  #photo::before {
-    content: "DAVID TAVARES";
-    color: #000;
-    font-family: "Alice", serif;
-    text-align: center;
-    color: #0b9499;
-    font-size: 2.5em;
-    background-color: #656363;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #conteneur {
-    margin-left: 0;
-  }
-
-  #loisirs-responsive {
-    display: initial;
-  }
+.informations-droite a {
+  font-size: 1.5em;
+  font-weight: bold;
 }
+
+.icone-principale,
+.icone-secondaire {
+  flex: 0.2;
+}
+
+.icone-principale,
+.pro {
+  text-decoration: none;
+  color: #0b9499;
+}
+
+/*--------------- Formation ---------------*/
+
+#formation {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/*--------------- Expérience ---------------*/
+
+#experience {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/*--------------- Recommandations ---------------*/
+
+#reco {
+  height: 10%;
+  display: flex;
+  padding-top: 20px;
+}
+
+#reco-gauche {
+  flex: 4;
+}
+
+#reco-droite {
+  flex: 3;
+}
+
+/*--------------- Media Queries ---------------*/
