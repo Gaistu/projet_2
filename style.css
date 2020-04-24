@@ -277,7 +277,7 @@ body {
 
 /*--------------- Media Queries ---------------*/
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1024px) {
   /*--------------- Général ---------------*/
 
   #bloc-page {
@@ -295,7 +295,7 @@ body {
     display: flex;
     flex-direction: column;
     order: 2;
-    height: 1000px;
+    height: 900px;
   }
 
   /*--------------- Photo ---------------*/
@@ -307,7 +307,7 @@ body {
   /*--------------- Contact ---------------*/
 
   #contact {
-    flex: 3;
+    flex: 2.5;
   }
 
   /*--------------- A propos de moi ---------------*/
@@ -342,6 +342,20 @@ body {
     order: 1;
   }
 
+  /*--------------- Ensemble ---------------*/
+
+  .titre-droite {
+    font-size: 1.8em;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #0b9499;
+    text-transform: uppercase;
+  }
+
+  .informations-droite a {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
   /*--------------- Nom ---------------*/
   #photo-responsive {
     display: initial;
@@ -349,11 +363,18 @@ body {
 
   #id {
     flex: 1;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   #nom {
-    font-size: 3em;
+    font-size: 2.5em;
+    display: flex;
+  }
+
+  #profession {
+    font-size: 1.7em;
   }
 
   /*--------------- Formation ---------------*/
