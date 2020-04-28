@@ -1,308 +1,243 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alice&display=swap"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/29d0c15e9b.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>CV David</title>
-  </head>
-  <body>
-    <main id="bloc-page">
-      <!-- Liseré -->
-      <section id="lisere">
-        <div id="autour-photo">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/29d0c15e9b.js" crossorigin="anonymous"></script>
+  <title>CV David</title>
+</head>
+
+<body>
+  <main id="bloc-page">
+    <!-- Liseré -->
+    <section id="lisere">
+      <div id="autour-photo">
+        <img id="photo" src="images/photo.png" alt="Photo" />
+      </div>
+
+      <!-- Contact -->
+      <article id="contact">
+        <h2 class="lisere-titre">contact</h2>
+        <p>
+          Parmain
+          <a href="https://www.google.fr/maps/place/95620+Parmain/@49.1249155,2.1640432,13z/data=!4m5!3m4!1s0x47e659665c81df17:0x40b82c3688b2ef0!8m2!3d49.113904!4d2.208519"
+            target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i></a><br />
+          France<br /><br />
+          Téléphone<br />
+          06 86 70 00 10<br /><br />
+          Email<br />
+          <a class="mail" href="mailto:gaistu@gmail.com" target="_blank">gaistu@gmail.com</a><br /><br />
+          Site Web - A venir<br />
+          <a id="url" href="#">www.gaistu.fr</a><br /><br />
+          Skype<br />
+          @David_Tavares
+        </p>
+      </article>
+
+      <!-- A propos de moi -->
+      <article id="about-me">
+        <h2 class="lisere-titre">à propos de moi</h2>
+        <p>
+          De tempérament optimiste et curieux, je me suis régulièrement
+          intéressé aux nouvelles technologies et à l'informatique en général.
+          J'ai travaillé presque 20 ans dans le commerce. Mais aujourd'hui,
+          cela ne me convient plus. Je souhaite travailler et vivre d'un
+          métier qui me passionne donc voilà pourquoi je me suis orienté vers
+          le développement web.
+        </p>
+      </article>
+
+      <!-- Loisirs -->
+      <article id="loisirs">
+        <h2 class="lisere-titre">loisirs</h2>
+        <div class="icone">
+          <a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3"
+            target="_blank"><i class="fa fa-code fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.fff.fr/la-vie-des-clubs/13474/infos-cles" target="_blank"><i class="fa fa-futbol-o fa-2x"
+              aria-hidden="true"></i></a>
+          <a href="https://steamcommunity.com/profiles/76561197998314081/" target="_blank"><i
+              class="fa fa-gamepad fa-2x" aria-hidden="true"></i></a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Partie de droite -->
+    <section id="conteneur">
+
+      <!-- Nom -->
+      <section id="id">
+        <!-- Photo responsive-->
+        <div id="photo-responsive">
           <img id="photo" src="images/photo.png" alt="Photo" />
         </div>
+        <!-- Fin photo responsive -->
+        <h1 id="nom"><span>DAVID</span> TAVARES</h1>
+        <h2 id="profession"><mark id="sous_titre">Dévelo</mark>ppeur web</h2>
+      </section>
 
-        <!-- Contact -->
-        <article id="contact">
-          <h2 class="lisere-titre">contact</h2>
-          <p>
-            Parmain
-            <a
-              href="https://www.google.fr/maps/place/95620+Parmain/@49.1249155,2.1640432,13z/data=!4m5!3m4!1s0x47e659665c81df17:0x40b82c3688b2ef0!8m2!3d49.113904!4d2.208519"
-              target="_blank"
-              ><i class="fa fa-map-marker" aria-hidden="true"></i></a
-            ><br />
-            France<br /><br />
-            Téléphone<br />
-            06 86 70 00 10<br /><br />
-            Email<br />
-            <a class="mail" href="mailto:gaistu@gmail.com" target="_blank"
-              >gaistu@gmail.com</a
-            ><br /><br />
-            Site Web - A venir<br />
-            <a id="url" href="#">www.gaistu.fr</a><br /><br />
-            Skype<br />
-            @David_Tavares
-          </p>
-        </article>
-
-        <!-- A propos de moi -->
-        <article id="about-me">
-          <h2 class="lisere-titre">à propos de moi</h2>
-          <p>
-            De tempérament optimiste et curieux, je me suis régulièrement
-            intéressé aux nouvelles technologies et à l'informatique en général.
-            J'ai travaillé presque 20 ans dans le commerce. Mais aujourd'hui,
-            cela ne me convient plus. Je souhaite travailler et vivre d'un
-            métier qui me passionne donc voilà pourquoi je me suis orienté vers
-            le développement web.
-          </p>
-        </article>
-
-        <!-- Loisirs -->
-        <article id="loisirs">
-          <h2 class="lisere-titre">loisirs</h2>
-          <div class="icone">
-            <a
-              href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3"
-              target="_blank"
-              ><i class="fa fa-code fa-2x" aria-hidden="true"></i
-            ></a>
-            <a
-              href="https://www.fff.fr/la-vie-des-clubs/13474/infos-cles"
-              target="_blank"
-              ><i class="fa fa-futbol-o fa-2x" aria-hidden="true"></i
-            ></a>
-            <a
-              href="https://steamcommunity.com/profiles/76561197998314081/"
-              target="_blank"
-              ><i class="fa fa-gamepad fa-2x" aria-hidden="true"></i
-            ></a>
+      <!-- Formation -->
+      <section id="formation">
+        <h2 class="titre-droite">
+          <i class="fa fa-graduation-cap fa-fw" aria-hidden="true" style="color: #0b9499;"></i>formation
+        </h2>
+        <article class="informations">
+          <div class="icone-principale">
+            <div class="rond">
+              <div class="rond-interne"></div>
+            </div>
           </div>
+          </div>
+          <aside class="informations-gauche">
+            <p>
+              Mars 2020 - En cours<br />
+              A distance
+            </p>
+          </aside>
+          <aside class="informations-droite">
+            <p>
+              <a class="pro" href="https://www.openclassrooms.com" target="_blank">OPENCLASSROOMS</a><br /><br />
+              Développeur Web Junior<br /><br />
+              Cours à distance.<br />
+              Apprentissage des langages front end HTML5, CSS3, JS et back end
+              PHP au travers de 7 projets.
+            </p>
+          </aside>
+        </article>
+        <article class="informations">
+          <div class="icone-secondaire">
+            <div class="rond-puce"></div>
+          </div>
+          <aside class="informations-gauche">
+            <p>
+              1995 - 1997<br />
+              Beaumont-sur-Oise
+            </p>
+          </aside>
+          <aside class="informations-droite">
+            <p>
+              <a class="pro" href="http://www.lyc-galois-beaumont.ac-versailles.fr/" target="_blank">LYCEE E.
+                GALOIS</a><br /><br />
+              BEP Comptabilité<br /><br />
+              Obtention du diplôme.
+            </p>
+          </aside>
         </article>
       </section>
 
-      <!-- Partie de droite -->
-      <section id="conteneur">
+      <!-- Expérience -->
+      <section id="experience">
+        <h2 class="titre-droite">
+          <i class="fa fa-suitcase fa-fw" aria-hidden="true" style="color: #0b9499;"></i>expérience professionnelle
+        </h2>
 
-        <!-- Nom -->
-        <section id="id">
-          <!-- Photo responsive-->
-          <div id="photo-responsive">
-            <img id="photo" src="images/photo.png" alt="Photo" />
-          </div>
-          <!-- Fin photo responsive -->
-            <h1 id="nom"><span>DAVID</span> TAVARES</h1>
-            <h2 id="profession"><mark id="sous_titre">Dévelo</mark>ppeur web</h2>
-        </section>
-
-        <!-- Formation -->
-        <section id="formation">
-          <h2 class="titre-droite">
-            <i
-              class="fa fa-graduation-cap fa-fw"
-              aria-hidden="true"
-              style="color: #0b9499;"
-            ></i
-            >formation
-          </h2>
-          <article class="informations">
+        <article class="informations">
+          <div class="icone-principale">
             <div class="icone-principale">
               <div class="rond">
                 <div class="rond-interne"></div>
               </div>
             </div>
-            </div>
-            <aside class="informations-gauche">
-              <p>
-                Mars 2020 - En cours<br />
-                A distance
-              </p>
-            </aside>
-            <aside class="informations-droite">
-              <p>
-                <a
-                  class="pro"
-                  href="https://www.openclassrooms.com"
-                  target="_blank"
-                  >OPENCLASSROOMS</a
-                ><br /><br />
-                Développeur Web Junior<br /><br />
-                Cours à distance.<br />
-                Apprentissage des langages front end HTML5, CSS3, JS et back end
-                PHP au travers de 7 projets.
-              </p>
-            </aside>
-          </article>
-          <article class="informations">
-            <div class="icone-secondaire">
-              <div class="rond-puce"></div>
-            </div>
-            <aside class="informations-gauche">
-              <p>
-                1995 - 1997<br />
-                Beaumont-sur-Oise
-              </p>
-            </aside>
-            <aside class="informations-droite">
-              <p>
-                <a
-                  class="pro"
-                  href="http://www.lyc-galois-beaumont.ac-versailles.fr/"
-                  target="_blank"
-                  >LYCEE E. GALOIS</a
-                ><br /><br />
-                BEP Comptabilité<br /><br />
-                Obtention du diplôme.
-              </p>
-            </aside>
-          </article>
-        </section>
+          </div>
+          <aside class="informations-gauche">
+            <p>
+              2012 - 2019<br />
+              Paris / Nantes<br />
+            </p>
+          </aside>
+          <aside class="informations-droite">
+            <p>
+              <a class="pro" href="https://www.free.fr/freebox" target="_blank">FREE CENTER</a><br /><br />
+              Conseiller Technique & Commercial<br /><br />
+              Accueillir les abonnés et les rediriger vers les pôles adapter à leurs demandes.
+              Gestion du SAV, des commandes et des réceptions de marchandises.
+              Ouverture et fermeture des boutiques, création de procédure.
+              Gérer et motiver les collaborateurs.
+              Force de propositions.
+            </p>
+          </aside>
+        </article>
 
-        <!-- Expérience -->
-        <section id="experience">
-          <h2 class="titre-droite">
-            <i
-              class="fa fa-suitcase fa-fw"
-              aria-hidden="true"
-              style="color: #0b9499;"
-            ></i
-            >expérience professionnelle
-          </h2>
-
-          <article class="informations">
-            <div class="icone-principale">
-              <div class="icone-principale">
-                <div class="rond">
-                  <div class="rond-interne"></div>
-                </div>
-              </div>
-            </div>
-            <aside class="informations-gauche">
-              <p>
-                2012 - 2019<br />
-                Paris / Nantes<br />
-              </p>
-            </aside>
-            <aside class="informations-droite">
-              <p>
-                <a
-                  class="pro"
-                  href="https://www.free.fr/freebox"
-                  target="_blank"
-                  >FREE CENTER</a
-                ><br /><br />
-                Conseiller Technique & Commercial<br /><br />
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima
-                facilis sed, fuga, assumenda voluptatem temporibus aspernatur
-                officia reiciendis quas perferendis quis, ad inventore beatae
-                vitae quisquam hic accusamus nemo repellat.
-              </p>
-            </aside>
-          </article>
-
-          <article class="informations">
-            <div class="icone-secondaire">
-              <div class="rond-puce"></div>
-            </div>
-            <aside class="informations-gauche">
-              <p>
-                2010 - 2012<br />
-                Région Parisienne<br />
-              </p>
-            </aside>
-            <aside class="informations-droite">
-              <p>
-                <a class="pro" href="#"> DOC-PC TUGAL</a><br /><br />
-                Réparateur Informatique (auto-entrepreneur / fin d'activité)<br /><br />
-                Réparation de pc, aide à l'achat de matériel et configuration.
-              </p>
-            </aside>
-          </article>
-          <article class="informations">
-            <div class="icone-secondaire">
-              <div class="rond-puce"></div>
-            </div>
-            <aside class="informations-gauche">
-              <p>2007 - 2010<br />Rezé<br /></p>
-            </aside>
-            <aside class="informations-droite">
-              <p>
-                <a
-                  href="https://www.e-leclerc.com/atout-sud/magasins-specialises/culture"
-                  class="pro"
-                  target="_blank"
-                  >E. LECLERC</a
-                ><br /><br />
-                Responsable Rayon Jeux Vidéo
-              </p>
-            </aside>
-          </article>
-          <article class="informations">
-            <div class="icone-secondaire">
-              <div class="rond-puce"></div>
-            </div>
-            <aside class="informations-gauche">
-              <p>2000 - 2007<br />St-Herblain / Quimper<br /></p>
-            </aside>
-            <aside class="informations-droite">
-              <p>
-                <a
-                  href="https://www.e-leclerc.com/atlantis/magasins-specialises/culture"
-                  class="pro"
-                  target="_blank"
-                  >E. LECLERC</a
-                ><br /><br />
-                Vendeur Informatique
-              </p>
-            </aside>
-          </article>
-        </section>
-
-        <!-- Recommandations -->
-        <section id="recommandations">
-          <h2 class="titre-droite">
-            <i
-              class="fa fa-pencil fa-fw"
-              aria-hidden="true"
-              style="color: #0b9499;"
-            ></i
-            >recommandations
-          </h2>
-          <article id="reco">
-            <aside id="reco-gauche">
-              <p>
-                RAPHAEL KRIEF<br />
-                Mentor, OpenClassrooms<br />
-                Téléphone : XX XX XX XX XX<br />
-                Email :
-                <a
-                  class="mail"
-                  href="mailto:raphaelkrief@protonmail.com"
-                  target="_blank"
-                  >raphaelkrief@protonmail.com</a
-                >
-              </p>
-            </aside>
-            <aside id="reco-droite">
-              <p>
-                RAPHAEL KRIEF<br />
-                Mentor, OpenClassrooms<br />
-                Téléphone : XX XX XX XX XX<br />
-                Email :
-                <a
-                  class="mail"
-                  href="mailto:raphaelkrief@protonmail.com"
-                  target="_blank"
-                  >raphaelkrief@protonmail.com</a
-                >
-              </p>
-            </aside>
-          </article>
-        </section>
+        <article class="informations">
+          <div class="icone-secondaire">
+            <div class="rond-puce"></div>
+          </div>
+          <aside class="informations-gauche">
+            <p>
+              2010 - 2012<br />
+              Région Parisienne<br />
+            </p>
+          </aside>
+          <aside class="informations-droite">
+            <p>
+              <a class="pro" href="#"> DOC-PC TUGAL</a><br /><br />
+              Réparateur Informatique (auto-entrepreneur / fin d'activité)<br /><br />
+              Réparation de pc, aide à l'achat de matériel et configuration.
+            </p>
+          </aside>
+        </article>
+        <article class="informations">
+          <div class="icone-secondaire">
+            <div class="rond-puce"></div>
+          </div>
+          <aside class="informations-gauche">
+            <p>2007 - 2010<br />Rezé<br /></p>
+          </aside>
+          <aside class="informations-droite">
+            <p>
+              <a href="https://www.e-leclerc.com/atout-sud/magasins-specialises/culture" class="pro" target="_blank">E.
+                LECLERC</a><br /><br />
+              Responsable Rayon Jeux Vidéo
+            </p>
+          </aside>
+        </article>
+        <article class="informations">
+          <div class="icone-secondaire">
+            <div class="rond-puce"></div>
+          </div>
+          <aside class="informations-gauche">
+            <p>2000 - 2007<br />St-Herblain / Quimper<br /></p>
+          </aside>
+          <aside class="informations-droite">
+            <p>
+              <a href="https://www.e-leclerc.com/atlantis/magasins-specialises/culture" class="pro" target="_blank">E.
+                LECLERC</a><br /><br />
+              Vendeur Informatique
+            </p>
+          </aside>
+        </article>
       </section>
-    </main>
-  </body>
+
+      <!-- Recommandations -->
+      <section id="recommandations">
+        <h2 class="titre-droite">
+          <i class="fa fa-pencil fa-fw" aria-hidden="true" style="color: #0b9499;"></i>recommandations
+        </h2>
+        <article id="reco">
+          <aside id="reco-gauche">
+            <p>
+              RAPHAEL KRIEF<br />
+              Mentor, OpenClassrooms<br />
+              Téléphone : XX XX XX XX XX<br />
+              Email :
+              <a class="mail" href="mailto:raphaelkrief@protonmail.com" target="_blank">raphaelkrief@protonmail.com</a>
+            </p>
+          </aside>
+          <aside id="reco-droite">
+            <p>
+              RAPHAEL KRIEF<br />
+              Mentor, OpenClassrooms<br />
+              Téléphone : XX XX XX XX XX<br />
+              Email :
+              <a class="mail" href="mailto:raphaelkrief@protonmail.com" target="_blank">raphaelkrief@protonmail.com</a>
+            </p>
+          </aside>
+        </article>
+      </section>
+    </section>
+  </main>
+</body>
+
 </html>
-
-

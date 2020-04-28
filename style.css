@@ -91,6 +91,7 @@ body {
 }
 
 #about-me p {
+  display: flex;
   text-align: justify;
   padding: 40px 40px 0;
 }
