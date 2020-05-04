@@ -7,7 +7,6 @@
 body {
   display: flex;
   justify-content: center;
-  height: 1700px;
 }
 
 #bloc-page {
@@ -184,7 +183,9 @@ ul li:first-child {
   display: flex;
   flex-direction: column;
   width: 80%;
+  justify-content: center;
   align-self: center;
+  flex-basis: 300px;
 }
 
 #id h1,
@@ -307,10 +308,6 @@ ul li:first-child {
     flex-direction: column;
     align-items: center;
     width: 100%;
-  }
-
-  body {
-    height: 0px;
   }
 
   /*--------------- Partie de gauche ---------------*/
