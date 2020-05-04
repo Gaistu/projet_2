@@ -309,6 +309,10 @@ ul li:first-child {
     width: 100%;
   }
 
+  body {
+    height: 0px;
+  }
+
   /*--------------- Partie de gauche ---------------*/
 
   /*--------------- Liseré ---------------*/
@@ -337,10 +341,6 @@ ul li:first-child {
   /*--------------- Loisirs ---------------*/
 
   /*--------------- Partie de droite ---------------*/
-
-  .informations {
-    padding: 0;
-  }
 
   /*--------------- Conteneur ---------------*/
 
