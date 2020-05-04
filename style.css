@@ -2,7 +2,6 @@
 
 * {
   font-family: "Alice", serif;
-  margin: 0;
 }
 
 body {
@@ -13,13 +12,13 @@ body {
 
 #bloc-page {
   display: flex;
-  width: 70%;
+  width: 75%;
 }
 
 /*--------------- Liseré ---------------*/
 
 #lisere {
-  width: 33%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   background-color: #0b9499;
@@ -33,10 +32,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 4;
+  flex: 2;
 }
 
-#photo {
+.photo {
   width: 220px;
   height: 220px;
 }
@@ -61,15 +60,7 @@ body {
 #contact {
   display: flex;
   flex-direction: column;
-  flex: 5;
-}
-
-#contact p {
-  padding: 40px 40px 0;
-}
-
-#contact a:first-child {
-  color: #000;
+  flex: 4;
 }
 
 #contact a:hover {
@@ -82,18 +73,32 @@ body {
   color: #bc0909;
 }
 
+#liste {
+  display: flex;
+  flex-direction: column;
+}
+#liste li {
+  list-style: none;
+}
+
+ul li:first-child {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
 /*--------------- A propos de moi ---------------*/
 
 #about-me {
   display: flex;
   flex-direction: column;
-  flex: 7;
+  flex: 5;
 }
 
 #about-me p {
   display: flex;
   text-align: justify;
-  padding: 40px 40px 0;
+  align-self: center;
+  width: 80%;
 }
 
 /*--------------- Loisirs ---------------*/
@@ -117,7 +122,10 @@ body {
 
 .icone a {
   color: #000;
-  padding: 10px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .icone a:hover {
@@ -131,9 +139,8 @@ body {
 #conteneur {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 50px 0 80px 100px;
-  width: 66%;
+  justify-content: space-evenly;
+  width: 75%;
 }
 
 /*--------------- Icone principale ---------------*/
@@ -142,7 +149,7 @@ body {
   width: 22px;
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .rond {
@@ -163,12 +170,6 @@ body {
 
 /*--------------- Icone secondaire ---------------*/
 
-.icone-secondaire {
-  width: 22px;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-}
 .rond-puce {
   border: 1px solid #0b9499;
   border-radius: 50%;
@@ -180,9 +181,15 @@ body {
 /*--------------- Nom ---------------*/
 
 #id {
-  height: 10%;
   display: flex;
   flex-direction: column;
+  width: 80%;
+  align-self: center;
+}
+
+#id h1,
+#id h2 {
+  margin: 0;
 }
 
 #nom {
@@ -208,14 +215,13 @@ body {
 
 .titre-droite {
   font-size: 2.5em;
-  padding-bottom: 20px;
   border-bottom: 2px solid #0b9499;
   text-transform: uppercase;
 }
 
 .informations {
   display: flex;
-  padding-top: 20px;
+  margin-bottom: 30px;
 }
 
 .informations-gauche {
@@ -224,6 +230,11 @@ body {
 
 .informations-droite {
   flex: 2;
+}
+
+.informations-droite p,
+.informations-gauche p {
+  margin: 0;
 }
 
 .informations-droite a {
@@ -245,27 +256,33 @@ body {
 /*--------------- Formation ---------------*/
 
 #formation {
-  height: 20%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  width: 80%;
+  align-self: center;
 }
 
 /*--------------- Expérience ---------------*/
 
 #experience {
-  height: 25%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  width: 80%;
+  align-self: center;
 }
 
 /*--------------- Recommandations ---------------*/
 
-#reco {
-  height: 10%;
+#recommandations {
   display: flex;
-  padding-top: 20px;
+  flex-direction: column;
+  width: 80%;
+  align-self: center;
+}
+
+#reco {
+  display: flex;
+  flex-direction: row;
 }
 
 #reco-gauche {
@@ -276,9 +293,14 @@ body {
   flex: 3;
 }
 
+#reco-gauche p,
+#reco-droite p {
+  margin: 0;
+}
+
 /*--------------- Media Queries ---------------*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   /*--------------- Général ---------------*/
 
   #bloc-page {
@@ -292,11 +314,14 @@ body {
   /*--------------- Liseré ---------------*/
 
   #lisere {
-    width: 100%;
     display: flex;
     flex-direction: column;
     order: 2;
-    height: 900px;
+    width: 100%;
+  }
+
+  .lisere-titre {
+    width: 100%;
   }
 
   /*--------------- Photo ---------------*/
@@ -307,25 +332,9 @@ body {
 
   /*--------------- Contact ---------------*/
 
-  #contact {
-    flex: 2.5;
-  }
-
   /*--------------- A propos de moi ---------------*/
 
-  #about-me {
-    flex: 2;
-  }
-
   /*--------------- Loisirs ---------------*/
-
-  #loisirs {
-    flex: 1;
-  }
-
-  #loisirs-responsive {
-    display: none;
-  }
 
   /*--------------- Partie de droite ---------------*/
 
@@ -336,24 +345,25 @@ body {
   /*--------------- Conteneur ---------------*/
 
   #conteneur {
-    padding: 0;
-    width: 90%;
-    display: flex;
-    height: 2000px;
+    width: 100%;
     order: 1;
+  }
+
+  #conteneur section {
+    width: 100%;
   }
 
   /*--------------- Ensemble ---------------*/
 
   .titre-droite {
-    font-size: 1.8em;
-    padding-bottom: 20px;
+    font-size: 1.6em;
     border-bottom: 2px solid #0b9499;
     text-transform: uppercase;
+    text-align: center;
   }
 
   .informations-droite a {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
   }
 
@@ -370,12 +380,12 @@ body {
   }
 
   #nom {
-    font-size: 2.5em;
+    font-size: 2.2em;
     display: flex;
   }
 
   #profession {
-    font-size: 1.7em;
+    font-size: 1.4em;
   }
 
   /*--------------- Formation ---------------*/
@@ -395,6 +405,13 @@ body {
   #reco {
     display: flex;
     flex-direction: column;
-    height: 220px;
+  }
+
+  #reco-droite {
+    flex: 1 0 120px;
+  }
+
+  #reco-gauche {
+    flex: 1 0 120px;
   }
 }
