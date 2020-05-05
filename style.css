@@ -11,6 +11,7 @@ body {
 
 #bloc-page {
   display: flex;
+  flex-direction: row;
   width: 75%;
 }
 
@@ -25,22 +26,22 @@ body {
 
 /*--------------- Partie de gauche ---------------*/
 
+#id-responsive {
+  display: none;
+}
+
 /*--------------- Photo ---------------*/
 
 #autour-photo {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 2;
+  flex: 2.5;
 }
 
 .photo {
   width: 220px;
   height: 220px;
-}
-
-#photo-responsive {
-  display: none;
 }
 
 /*--------------- Informations ---------------*/
@@ -105,7 +106,7 @@ ul li:first-child {
 #loisirs {
   display: flex;
   flex-direction: column;
-  flex: 2;
+  flex: 1 0 80px;
 }
 
 .icone {
@@ -149,6 +150,7 @@ ul li:first-child {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin-top: 2px;
 }
 
 .rond {
@@ -175,6 +177,7 @@ ul li:first-child {
   height: 7px;
   width: 7px;
   background: #0b9499;
+  margin: 7px 0 0 5px;
 }
 
 /*--------------- Nom ---------------*/
@@ -205,11 +208,10 @@ ul li:first-child {
   font-size: 2em;
 }
 
-#sous_titre {
+.sous_titre {
   color: #000;
   border-bottom: 2px solid #0b9499;
   padding-bottom: 1px;
-  background-color: #ffffff;
 }
 
 /*--------------- Ensemble ---------------*/
@@ -218,6 +220,12 @@ ul li:first-child {
   font-size: 2.5em;
   border-bottom: 2px solid #0b9499;
   text-transform: uppercase;
+}
+
+.fa-graduation-cap,
+.fa-suitcase,
+.fa-pencil {
+  margin-right: 0.4em;
 }
 
 .informations {
@@ -284,6 +292,7 @@ ul li:first-child {
 #reco {
   display: flex;
   flex-direction: row;
+  flex-basis: 150px;
 }
 
 #reco-gauche {
@@ -317,7 +326,6 @@ ul li:first-child {
   #lisere {
     display: flex;
     flex-direction: column;
-    order: 2;
     width: 100%;
   }
 
@@ -327,15 +335,15 @@ ul li:first-child {
 
   /*--------------- Photo ---------------*/
 
-  #autour-photo {
-    display: none;
-  }
-
   /*--------------- Contact ---------------*/
 
   /*--------------- A propos de moi ---------------*/
 
   /*--------------- Loisirs ---------------*/
+
+  #loisirs {
+    margin-bottom: 3em;
+  }
 
   /*--------------- Partie de droite ---------------*/
 
@@ -343,7 +351,6 @@ ul li:first-child {
 
   #conteneur {
     width: 100%;
-    order: 1;
   }
 
   #conteneur section {
@@ -365,24 +372,31 @@ ul li:first-child {
   }
 
   /*--------------- Nom ---------------*/
-  #photo-responsive {
+
+  #id-responsive {
     display: initial;
+    background-color: #656363;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nom-responsive {
+    font-size: 2.2em;
+    margin: 10px 0 0;
+  }
+
+  #nom-responsive span {
+    color: #0b9499;
+  }
+
+  #profession-responsive {
+    font-size: 1.4em;
+    margin: 0 0 10px;
   }
 
   #id {
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #nom {
-    font-size: 2.2em;
-    display: flex;
-  }
-
-  #profession {
-    font-size: 1.4em;
+    display: none;
   }
 
   /*--------------- Formation ---------------*/
